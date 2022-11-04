@@ -24,3 +24,4 @@ h=abs(n-c)
 k=min(g,h)
 print(k)
     
+    
