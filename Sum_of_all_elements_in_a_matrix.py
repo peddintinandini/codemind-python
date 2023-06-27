@@ -1,8 +1,8 @@
-n,m=map(int,input().split())
-mat=[[int(i) for i in input().split()] for j in range(n)]
-d=[]
-
-for i in mat:
-    for j in i:
-        d.append(j)
-print(sum(d))
+a,b=map(int,input().split())
+m=[]
+s=0
+for i in range(a):
+    l=list(map(int,input().split()))
+    m.append(l)
+    s+=sum(l)
+print(s)
