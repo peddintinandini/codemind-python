@@ -1,11 +1,15 @@
-n,m=map(int,input().split())
-mat=[[int(i) for i in input().split()] for j in range(n)]
-d=[]
-f=[]
-for i in mat:
-    for j in i:
-        if j%2==0:
-            d.append(j)
+a,b=map(int,input().split())
+m=[]
+e=[]
+o=[]
+for i in range(a):
+    l=list(map(int,input().split()))
+    m.append(l)
+    for j in l:
+        if (j%2==0):
+            e.append(j)
         else:
-            f.append(j)
-print(sum(d),sum(f))
+            o.append(j)
+print(sum(e),sum(o))
+            
+    
