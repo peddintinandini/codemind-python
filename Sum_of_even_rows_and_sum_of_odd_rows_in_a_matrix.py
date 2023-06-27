@@ -1,19 +1,14 @@
-n,m=map(int,input().split())
-mat=[[int(i) for i in input().split()] for j in range(n)]
-d=[]
-f=[]
-g=[]
-s=[]
-for i in range(0,len(mat)):
-    if i%2:
-        d.append(mat[i])
+a,b=map(int,input().split())
+m=[]
+s1=0
+s2=0
+for i in range(a):
+    l=list(map(int,input().split()))
+    m.append(l)
+    if (i%2==0):
+        s1+=sum(l)
     else:
-        f.append(mat[i])
-for i in d:
-    for j in i:
-        g.append(j)
-for i in f:
-    for j in i:
-        s.append(j)
-print(sum(s),sum(g))
+        s2+=sum(l)
+print(s1,s2)
+            
     
